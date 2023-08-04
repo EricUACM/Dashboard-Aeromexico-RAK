@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://kit.fontawesome.com/ba3d5971d3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+  <title>Dashboard Aeromexico</title>
+</head>
+
+<body>
+
+  <!--Contenedor principal de todo el dashboard-->
+  <div class="container-fluid">
+
+    <!--Estructura de navbar vista escritorio-->
+    <div class="row" id="fila">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo-cargo.png" width="145" height="50" id="logo">
+          </a>
+
+          <div class="col align-content-center justify-content-center d-flex align-items-center p-2">
+            <img src="./img/gcp.png" class="logo-gcp">
+          </div>
+
+          <div class="col align-content-center justify-content-center d-flex align-items-center p-2">
+            <h2 id="cfdi">CFDI 4.0</h2>
+          </div>
+
+
+
+          <div class="justify-content-end">
+
+            <ul class="nav">
+
+              <!--Estructura de menú en modo responsive móviles-->
+              <li class="nav-item d-lg-none">
+                <div
+                  class="col-sm-12 col-md-12 align-content-center justify-content-center d-flex align-items-center p-2 d-lg-none">
+                  <div class="dropdown">
+                    <a class="btn" id="menu1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i
+                        class="fa-solid fa-list-check align-content-center justify-content-center d-flex align-items-left ico-list">
+                        <p class="detalle text-uppercase">Consultar detalle</p>
+                      </i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item text-white" href="#">Page 1</a></li>
+                      <li><a class="dropdown-item text-white" href="#">Page 2</a></li>
+                      <li><a class="dropdown-item text-white" href="#">Page 3</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item d-lg-none">
+
+                <div class="col-sm-6 align-content-center justify-content-center align-items-center p-2">
+                  <p class="text-center mt-3 d-none" id="week">Semana:</p>
+                  <div class="dropdown">
+                    <a class="btn" href="#" id="menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-caret-down-fill" id="abajo">
+                        <p id="semana">SEMANA</p>
+                      </i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item text-white" href="#" target="_blank">Page 1</a></li>
+                      <li><a class="dropdown-item text-white" href="#" target="_blank">Page 2</a></li>
+                      <li><a class="dropdown-item text-white" href="#" target="_blank">Page 3</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </li>
+
+              <li class="nav-item d-lg-none">
+                <div class="col-sm-6 align-content-center justify-content-center align-items-center p-2">
+                  <p class="text-center mt-3 d-none" id="year">Año:</p>
+                  <div class="dropdown">
+                    <a class="btn" href="#" id="menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-caret-down-fill mt-0" id="abajo">
+                        <p id="anio">AÑO</p>
+                      </i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item text-white" href="#" target="_blank">Page 1</a></li>
+                      <li><a class="dropdown-item text-white" href="#" target="_blank">Page 2</a></li>
+                      <li><a class="dropdown-item text-white" href="#" target="_blank">Page 3</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <!--Fin de la estructura de menú en modo responsive móviles-->
+
+              <li class="nav-item">
+
+                <div
+                  class="align-content-center justify-content-center d-flex align-items-center p-2 d-none d-lg-flex d-block">
+                  <p class="text-center mt-3" id="week">Semana:</p>
+                  <div class="dropdown p-2">
+                    <a class="btn" href="#" id="menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-caret-down-fill" id="abajo"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item text-white" href="#" target="_blank">Page 1</a></li>
+                      <li><a class="dropdown-item text-white" href="#" target="_blank">Page 2</a></li>
+                      <li><a class="dropdown-item text-white" href="#" target="_blank">Page 3</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </li>
+
+              <li class="nav-item">
+                <div
+                  class="align-content-center justify-content-center d-flex align-items-center p-2 d-none d-lg-flex d-block">
+                  <p class="text-center mt-3" id="year">Año:</p>
+                  <div class="dropdown p-2">
+                    <a class="btn" href="#" id="menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-caret-down-fill mt-0" id="abajo"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item text-white" href="#" target="_blank">Page 1</a></li>
+                      <li><a class="dropdown-item text-white" href="#" target="_blank">Page 2</a></li>
+                      <li><a class="dropdown-item text-white" href="#" target="_blank">Page 3</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div
+                  class="col-lg align-content-center justify-content-center d-flex align-items-center mt-2 p-2 d-none d-lg-flex d-block">
+                  <div class="dropdown">
+                    <a class="btn" id="menu1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i
+                        class="fa-solid fa-list-check align-content-center justify-content-center d-flex align-items-left ico-list">
+                        <p class="detalle">Consultar detalle</p>
+                      </i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item text-white" href="#">Page 1</a></li>
+                      <li><a class="dropdown-item text-white" href="#">Page 2</a></li>
+                      <li><a class="dropdown-item text-white" href="#">Page 3</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--Fin de la estructura de navbar vista escritorio-->
+
+    <!--Estructura del contenedor de las filas-->
+    <div class="container">
+
+      <!--Estructura de menú con iconos en modo responsive móviles-->
+      <div class="owl-container d-lg-none mt-4">
+
+        <div class="owl-carousel owl-theme mb-4" id="carrusel">
+
+          <div class="item">
+            <div
+              class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center box-1-movil">
+              <i class="fa-solid fa-location-dot ico-geo"></i>
+              <p class="estaciones">ESTACIONES <br> <span class="span">225</span></p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div
+              class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center box-1-movil">
+              <i class="fa-solid fa-house ico-home"></i>
+              <p class="mex-dom">MEX DOM <br> <span class="span">157</span></p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div
+              class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center box-1-movil">
+              <i class="fa-solid fa-plane-arrival ico-avion"></i>
+              <p class="mex-expo">MEX EXPO <br> <span class="span">3</span></p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div
+              class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center box-1-movil">
+              <i class="fa-sharp fa-solid fa-weight-hanging ico-peso"></i>
+              <p class="peso">VARIACION EN PESO <br><span class="span">3,879</span></p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div
+              class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center box-1-movil">
+              <i class="fa-sharp fa-solid fa-sun ico-sol"></i>
+              <p class="hrs">+24 HRS <br> <span class="span">751</span></p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div
+              class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center box-1-movil">
+              <i class="fa-solid fa-clock ico-reloj"></i>
+              <p class="min">+60 MIN <br> <span class="span">5,254</span></p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div
+              class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center box-1-movil">
+              <i class="fa-solid fa-ghost ico-ghost"></i>
+              <p class="fantasma">FANTASMAS <br> <span class="span">633</span></p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div
+              class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center box-1-movil">
+              <i class="fa-solid fa-receipt ico-ticket"></i>
+              <p class="facturas">FACTURAS DUPLICADAS <span class="span"><br>34</span></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!--Fin de la estructura de menú con iconos en modo responsive móviles-->
+
+
+      <!--Estructura de diferentes opciones (menú con iconos)-->
+      <div class="row mt-4 mb-4 d-sm-none d-lg-flex d-none">
+
+        <div class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center box-1">
+          <i class="fa-solid fa-location-dot ico-geo mt-3">
+            <p class="estaciones">ESTACIONES <br> <span class="span">225</span></p>
+          </i>
+        </div>
+
+        <div class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center box-1">
+          <i class="fa-solid fa-house ico-home mt-3">
+            <p class="mex-dom">MEX DOM <br> <span class="span">157</span></p>
+          </i>
+        </div>
+
+        <div class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center box-1">
+          <i class="fa-solid fa-plane-arrival ico-avion mt-3">
+            <p class="mex-expo">MEX EXPO <br> <span class="span">3</span></p>
+          </i>
+        </div>
+
+        <div class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center box-1">
+          <i class="fa-sharp fa-solid fa-weight-hanging ico-peso mt-3">
+            <p class="peso">VARIACION EN PESO <br><span class="span">3,879</span></p>
+          </i>
+        </div>
+
+        <div class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center box-1">
+          <i class="fa-sharp fa-solid fa-sun ico-sol mt-3">
+            <p class="hrs">+24 HRS <br> <span class="span">751</span></p>
+          </i>
+        </div>
+
+        <div class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center box-1">
+          <i class="fa-solid fa-clock ico-reloj mt-3">
+            <p class="min">+60 MIN <br> <span class="span">5,254</span></p>
+          </i>
+        </div>
+
+        <div class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center box-1">
+          <i class="fa-solid fa-ghost ico-ghost mt-3">
+            <p class="fantasma">FANTASMAS <br> <span class="span">633</span></p>
+          </i>
+        </div>
+
+        <div class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center box-1">
+          <i class="fa-solid fa-receipt ico-ticket mt-3">
+            <p class="facturas">FACTURAS DUPLICADAS <span class="span"><br>34</span></p>
+          </i>
+        </div>
+
+      </div>
+      <!--Fin de la estructura de diferentes opciones (menú con iconos)-->
+
+
+      <!--Estructura de barra azul marino en modo responsive móviles-->
+      <div class="row d-lg-none">
+
+        <div class="accordion mb-4" id="accordionExample">
+
+          <div class="accordion-item" id="acordeon-box">
+
+            <h2 class="accordion-header">
+
+              <button class="accordion-button barra-azul-gradiente" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <div class="align-content-center justify-content-center d-flex align-items-center">
+                  <p class="semanas mt-3 mt-lg-2 mt-sm-3">ACUMULADOS POR SEMANAS</p>
+                  <i class="bi bi-caret-down-fill ms-4" id="down-white"></i>
+                </div>
+              </button>
+
+            </h2>
+
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+
+              <div class="accordion-body barra-azul-gradiente-cuerpo">
+
+                <div class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center">
+                  <p class="text-center mt-3" id="operados">Operados <span class="total">33,370</span></p>
+                </div>
+
+                <div class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center">
+                  <p class="text-center mt-3" id="vuelos">Vuelos <span class="total">99%</span></p>
+                </div>
+
+                <div class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center">
+                  <p class="text-center mt-3" id="facturados">Facturados <span class="total">99%</span></p>
+                </div>
+
+                <div class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center">
+                  <p class="text-center mt-3" id="no-facturados">No facturados <span class="total">10</span></p>
+                </div>
+
+                <div class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center">
+                  <p class="text-center mt-3" id="efectividad"> % Efectividad <span class="total">67%</span></p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!--Fin de estructura de barra azul marino en modo responsive móviles-->
+
+
+      <!--Estructura de barra azul marino vista escritorio-->
+      <div class="row barra-azul-gradiente mb-4 d-md-none d-sm-none d-lg-flex d-none">
+
+        <div class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center">
+          <h2 class="semanas mt-2 mt-lg-2 mt-sm-3">ACUMULADOS POR SEMANAS</h2>
+        </div>
+
+        <div class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center">
+          <p class="text-center mt-3" id="operados">Operados <span class="total">33,370</span></p>
+        </div>
+
+        <div class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center">
+          <p class="text-center mt-3" id="vuelos">Vuelos <span class="total">99%</span></p>
+        </div>
+
+        <div class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center">
+          <p class="text-center mt-3" id="facturados">Facturados <span class="total">99%</span></p>
+        </div>
+
+        <div class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center">
+          <p class="text-center mt-3" id="no-facturados">No facturados <span class="total">10</span></p>
+        </div>
+
+        <div class="col-lg col-md col-sm align-content-center justify-content-center d-flex align-items-center">
+          <p class="text-center mt-3" id="efectividad"> % Efectividad <span class="total">67%</span></p>
+        </div>
+
+      </div>
+      <!--Fin de la estructura de barra azul marino vista escritorio-->
+
+      <!--Estructura de barra azul claro-->
+      <div class="row barra-azul-claro">
+        <div class="col align-content-center justify-content-center d-flex align-items-center">
+          <div class="container">
+            <h2 class="carta mt-2 text-sm-center text-lg-start">COMPLEMENTO CARTA PORTE</h2>
+          </div>
+        </div>
+      </div>
+      <!--Fin de la estructura de barra azul claro-->
+
+      <!--Estructura de la tabla del dasboard-->
+      <div class="row text-center">
+
+        <div class="container">
+
+          <div class="col-sm table-responsive">
+
+            <table class="table table-striped table-hover">
+
+              <thead>
+
+                <tr>
+
+                  <th class="static" scope="col"></th>
+
+                  <th class="first-col" scope="col">
+                    <p class="parrafo-columna"><span class="title-colum">301</span> <br> 01 jun-07 jun</p>
+                  </th>
+
+                  <th scope="col">
+                    <p class="parrafo-columna"><span class="title-colum">301</span> <br> 01 jun-07 jun</p>
+                  </th>
+
+                  <th scope="col">
+                    <p class="parrafo-columna"><span class="title-colum">301</span> <br> 01 jun-07 jun</p>
+                  </th>
+
+                  <th scope="col">
+                    <p class="parrafo-columna"><span class="title-colum">301</span> <br> 01 jun-07 jun</p>
+                  </th>
+
+                  <th scope="col">
+                    <p class="parrafo-columna"><span class="title-colum">301</span> <br> 01 jun-07 jun</p>
+                  </th>
+
+                  <th scope="col">
+                    <p class="parrafo-columna"><span class="title-colum">301</span> <br> 01 jun-07 jun</p>
+                  </th>
+
+                  <th scope="col">
+                    <p class="parrafo-columna"><span class="title-colum">301</span> <br> 01 jun-07 jun</p>
+                  </th>
+
+                  <th scope="col">
+                    <p class="parrafo-columna"><span class="title-colum">301</span> <br> 01 jun-07 jun</p>
+                  </th>
+
+                  <th scope="col">
+                    <p class="parrafo-columna"><span class="title-colum">301</span> <br> 01 jun-07 jun</p>
+                  </th>
+
+                  <th scope="col">
+                    <p class="parrafo-columna"><span class="title-colum">301</span> <br> 01 jun-07 jun</p>
+                  </th>
+
+                  <th scope="col">
+                    <p class="parrafo-columna"><span class="title-colum">301</span> <br> 01 jun-07 jun</p>
+                  </th>
+
+                  <th scope="col">
+                    <p class="parrafo-columna"><span class="title-colum">301</span> <br> 01 jun-07 jun</p>
+                  </th>
+
+                </tr>
+
+              </thead>
+
+              <tbody>
+
+                <tr>
+                  <th class="static" scope="row">
+
+                    <p class="parrafo-fila d-inline align-items-center">Vuelos operados</p>
+
+                  </th>
+
+                  <td class="first-col">1416</td>
+                  <td>1416</td>
+                  <td>1416</td>
+                  <td>1416</td>
+                  <td>1416</td>
+                  <td>1416</td>
+                  <td>1416</td>
+                  <td>1416</td>
+                  <td>1416</td>
+                  <td>1416</td>
+                  <td>1416</td>
+                  <td>1416</td>
+
+                </tr>
+
+                <tr>
+                  <th class="static" scope="row">
+
+                    <p class="parrafo-fila d-inline align-items-center">Vuelos facturados</p>
+
+                  </th>
+
+                  <td class="first-col">156</td>
+                  <td>156</td>
+                  <td>156</td>
+                  <td>156</td>
+                  <td>156</td>
+                  <td>156</td>
+                  <td>156</td>
+                  <td>156</td>
+                  <td>156</td>
+                  <td>156</td>
+                  <td>156</td>
+                  <td>156</td>
+
+                </tr>
+
+                <tr>
+                  <th class="static" scope="row">
+
+                    <p class="parrafo-fila d-inline align-items-center">% Vuelos facturados</p>
+
+                  </th>
+
+                  <td class="first-col">68%</td>
+                  <td>68%</td>
+                  <td>68%</td>
+                  <td>68%</td>
+                  <td>68%</td>
+                  <td>68%</td>
+                  <td>68%</td>
+                  <td>68%</td>
+                  <td>68%</td>
+                  <td>68%</td>
+                  <td>68%</td>
+                  <td>68%</td>
+
+                </tr>
+
+                <tr>
+                  <th class="static" scope="row">
+
+                    <p class="parrafo-fila d-inline align-items-center">Vuelos NO facturados</p>
+
+                  </th>
+                  <td class="first-col">2</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>2</td>
+                </tr>
+
+                <tr>
+                  <th class="static" scope="row">
+                    <p class="estacion d-inline align-items-center">Estaciones</p>
+                  </th>
+                  <td class="first-col">3</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>3</td>
+                </tr>
+
+                <tr>
+                  <th class="static" scope="row">
+                    <p class="dom d-inline align-items-center">MEX Dom</p>
+                  </th>
+                  <td class="first-col">4</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>4</td>
+                </tr>
+
+                <tr>
+                  <th class="static" scope="row" id="fondo-expo">
+                    <p class="expo d-inline align-items-center">MEX Expo</p>
+                  </th>
+                  <td class="first-col">1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                </tr>
+
+                <tr>
+                  <th class="static" scope="row">
+                    <p class="skychain d-inline align-items-center">Incidencia Skychain</p>
+                  </th>
+                  <td class="first-col"><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                </tr>
+
+                <tr>
+                  <th class="static" scope="row">
+                    <p class="gcp d-inline align-items-center">Incidencia GCP</p>
+                  </th>
+                  <td class="first-col"><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                  <td><b class="cero">0</b></td>
+                </tr>
+
+                <tr>
+                  <th class="static" scope="row">
+                    <p class="parrafo-fila d-inline align-items-center">Variación en peso</p>
+                  </th>
+                  <td class="first-col">135</td>
+                  <td>135</td>
+                  <td>135</td>
+                  <td>135</td>
+                  <td>135</td>
+                  <td>135</td>
+                  <td>135</td>
+                  <td>135</td>
+                  <td>135</td>
+                  <td>135</td>
+                  <td>135</td>
+                  <td>135</td>
+                </tr>
+
+                <tr>
+                  <th class="static" scope="row">
+                    <p class="parrafo-fila d-inline align-items-center">+24 hrs</p>
+                  </th>
+                  <td class="first-col">11</td>
+                  <td>11</td>
+                  <td>11</td>
+                  <td>11</td>
+                  <td>11</td>
+                  <td>11</td>
+                  <td>11</td>
+                  <td>11</td>
+                  <td>11</td>
+                  <td>11</td>
+                  <td>11</td>
+                  <td>11</td>
+                </tr>
+
+                <tr>
+                  <th class="static" scope="row">
+                    <p class="parrafo-fila d-inline align-items-center">+60 min</p>
+                  </th>
+                  <td class="first-col">45</td>
+                  <td>45</td>
+                  <td>45</td>
+                  <td>45</td>
+                  <td>45</td>
+                  <td>45</td>
+                  <td>45</td>
+                  <td>45</td>
+                  <td>45</td>
+                  <td>45</td>
+                  <td>45</td>
+                  <td>45</td>
+                </tr>
+
+                <tr>
+                  <th class="static" scope="row">
+                    <p class="parrafo-fila d-inline align-items-center">Fantasmas</p>
+                  </th>
+                  <td class="first-col">14</td>
+                  <td>14</td>
+                  <td>14</td>
+                  <td>14</td>
+                  <td>14</td>
+                  <td>14</td>
+                  <td>14</td>
+                  <td>14</td>
+                  <td>14</td>
+                  <td>14</td>
+                  <td>14</td>
+                  <td>14</td>
+                </tr>
+
+                <tr>
+                  <th class="static" scope="row">
+                    <p class="parrafo-fila d-inline align-items-center">Facturas duplicadas</p>
+                  </th>
+                  <td class="first-col">0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+
+                <tr>
+                  <th class="static" scope="row">
+                    <p class="parrafo-fila d-inline align-items-center">% Efectividad</p>
+                  </th>
+                  <td class="first-col">29%</td>
+                  <td>29%</td>
+                  <td>29%</td>
+                  <td>29%</td>
+                  <td>29%</td>
+                  <td>29%</td>
+                  <td>29%</td>
+                  <td>29%</td>
+                  <td>29%</td>
+                  <td>29%</td>
+                  <td>29%</td>
+                  <td>29%</td>
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+        </div>
+
+
+      </div>
+      <!--Fin de la estructura de la tabla del dasboard-->
+
+      <!--Estructura de las graficas para vista de celulares-->
+      <div class="row mb-5 d-lg-none mt-5">
+
+        <div class="row-cols-sm-1 d-lg-none d-md-none d-sm-none">
+          <p class="title-vuelos mt-3">VUELOS NO FACTURADOS</p>
+        </div>
+
+        <div class="col-sm-6">
+
+          <div class="p-3 align-content-center justify-content-center d-flex align-items-center" id="box-vuelos-cel">
+
+            <div class="col-6 col-sm-5 col-md-6 d-inline align-items-center p-4">
+
+              <div class="d-sm-none d-block d-none">
+                <p class="title-vuelos mt-3 p-1">VUELOS NO FACTURADOS <br></p>
+              </div>
+
+              <p id="num-fact" class="text-start" style="font-size: 30px;">482</p>
+
+              <div class="box-lista">
+
+                <ul class="mt-3">
+                  <li id="puntito-azul">
+                    <p class="dato1">Dato 1</p>
+                  </li>
+                  <li id="puntito-cielo">
+                    <p class="dato2">Dato 2</p>
+                  </li>
+                  <li id="puntito-gris">
+                    <p class="dato3">Dato 3</p>
+                  </li>
+                </ul>
+
+              </div>
+
+            </div>
+
+            <div class="col-6 col-sm-7 col-md-6 d-inline align-items-center" id="dona">
+
+              <canvas id="donut"></canvas>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row-cols-sm-1 d-lg-none d-md-none d-sm-none">
+          <p class="title-vuelos mt-4">% EFECTIVIDAD VS % VUELOS</p>
+        </div>
+
+        <div class="col-sm-6 mt-0">
+          <div class="p-3 align-content-center justify-content-center d-block align-items-center" id="box-efectividad">
+
+            <div class="col-sm-12 col-md-6 col-lg-6 d-block align-items-center mt-3 d-sm-none d-block d-none">
+              <p class="title-efect">% EFECTIVIDAD VS % VUELOS</p>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-6" id="grafica-barras">
+              <canvas id="myChart"></canvas>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+      <!--Fin de la estructura de las graficas para vista de celulares-->
+
+      <!--Estructura de las gráficas vista escritorio-->
+      <div class="row mb-5 d-md-none d-sm-none d-lg-flex d-none">
+
+        <div class="col-sm-6 mt-4">
+
+          <div class="p-3 align-content-center justify-content-center d-flex align-items-center" id="box-vuelos">
+
+            <div class="container text-center">
+              <div class="row">
+
+                <div class="col-sm-12 col-md-6 col-lg-6 mt-2 mb-2">
+                  <div class="p-3">
+                    <p class="title-vuelos">VUELOS NO FACTURADOS <br></p>
+                    <p id="num-fact">482</p>
+
+                    <div class="box-lista mt-3">
+
+                      <ul class="mt-3">
+                        <li id="puntito-azul">
+                          <p class="dato1">Dato 1</p>
+                        </li>
+                        <li id="puntito-cielo">
+                          <p class="dato2">Dato 2</p>
+                        </li>
+                        <li id="puntito-gris">
+                          <p class="dato3">Dato 3</p>
+                        </li>
+                      </ul>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                  <div class="p-3 align-content-center justify-content-center d-flex align-items-center mt-2">
+
+                    <canvas id="donut1"></canvas>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 mt-4">
+          <div class="p-3 align-content-center justify-content-center d-block align-items-center" id="box-efectividad">
+
+            <div class="col-sm-12 col-md-6 col-lg-6 d-block align-items-center mt-3">
+              <p class="title-efect">% EFECTIVIDAD VS % VUELOS</p>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-6" id="grafica-barras">
+              <canvas id="myChart1"></canvas>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!--Fin de la estructura de las gráficas vista escritorio-->
+
+    </div>
+    <!--Fin de la estructura del contenedor de las filas-->
+
+  </div>
+  <!--Fin del Contenedor principal del todo el dashboard-->
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./jquery.min.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

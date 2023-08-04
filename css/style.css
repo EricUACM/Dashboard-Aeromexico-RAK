@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+#cfdi{
+    color: #0A2240;
+    font-family: 'Oxygen';
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#menu{
+    background: #F5F5F5;
+    border-radius: 16px;
+    width: auto;
+    height: 30px;
+    border: none;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15) inset;
+}
+
+#abajo{
+    color: #368DC6;
+    margin-left: 100px;
+}
+
+#abajo::before{
+    vertical-align: -0.1em;
+}
+
+#abajo::after{
+    vertical-align: 2.9em;
+}
+
+#menu1{
+    background: #1B8BD3;
+    border-radius: 16px;
+    width: 170px;
+    height: 32px;
+    border: none;
+}
+
+#year, #week{
+    font-family: 'Oxygen';
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+}
+
+.estaciones, .mex-dom, 
+.mex-expo, .peso, 
+.hrs, .min, .fantasma{
+    color: #7C7C7C;
+    font-family: 'Oxygen';
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.peso, .facturas{
+    font-size: 11px;
+    color: #7C7C7C;
+    font-family: 'Oxygen';
+    font-weight: 600;
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.ico-geo, .ico-home, .ico-avion,
+.ico-peso, .ico-sol, .ico-reloj,
+.ico-ghost, .ico-ticket{
+    color: #7C7C7C;
+    font-size: 15px;
+    text-align: center;
+}
+
+.ico-list{
+    color: white;
+    text-align: left;
+    margin-top: 2px;
+}
+
+.detalle{
+    font-family: 'Oxygen';
+    font-size: 12px;
+    color: white;
+    text-align: left;
+    margin-top: 3px;
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+.box-1{
+    height: 120px;
+    border-right: 1px solid #D7D7D7;
+    transition: all 400ms ease-in-out;
+}
+
+.box-1:hover{
+    background: #FBFBFB;
+    box-shadow: 0px 4px 15px 0px rgba(25, 66, 161, 0.50);
+    transition: all 400ms ease-in-out;
+    transform: translateY(-3%);
+    cursor: pointer;
+}
+
+.box-1:hover .ico-geo,
+.box-1:hover .ico-home,
+.box-1:hover .ico-avion,
+.box-1:hover .ico-peso,
+.box-1:hover .ico-sol,
+.box-1:hover .ico-reloj,
+.box-1:hover .ico-ghost,
+.box-1:hover .ico-ticket{
+    color: #103863;
+    font-size: 20px;
+    transition: all 400ms ease-in-out;
+    transform: translateY(-3%);
+}
+
+.box-1:hover .estaciones,
+.box-1:hover .mex-dom,
+.box-1:hover .mex-expo,
+.box-1:hover .peso,
+.box-1:hover .hrs,
+.box-1:hover .min,
+.box-1:hover .fantasma,
+.box-1:hover .facturas{
+    color: #434343;
+    font-size: 15px;
+    transition: all 400ms ease-in-out;
+    transform: translateY(-3%);
+    font-weight: 500;
+    font-family: 'Oxygen';
+}
+
+.box-1:hover .span{
+    color: #434343;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.barra-azul-gradiente{
+    height: auto;
+    border-radius: 25px;
+    background: linear-gradient(78deg, #092647 0%, #092443 37.75%, #103863 99.40%);
+}
+
+.semanas{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Oxygen';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#operados, #vuelos, 
+#facturados, #no-facturados, 
+#efectividad{
+    color: #FFF;
+    font-family: 'Oxygen';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.total{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.barra-azul-claro{
+    background: #368DC6;
+    height: 45px;
+}
+
+.carta{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Oxygen';
+}
+
+#box-vuelos{
+    border-radius: 25px;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    height: auto;
+}
+
+#box-vuelos-cel{
+    border-radius: 25px;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    height: auto;
+}
+
+#box-efectividad{
+    border-radius: 25px;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+
+.parrafo-fila{
+    font-size: 12px;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 700;
+    color: #434343;
+}
+
+.parrafo-columna{
+    color: #7C7C7C;
+    text-align: center;
+    font-family: 'Oxygen';
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.title-colum{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    color: #7C7C7C;
+    font-family: 'Oxygen';
+    line-height: normal;
+}
+
+.estacion, .dom, 
+.expo, .skychain,
+.gcp{
+    color: #434343;
+    font-family: 'Oxygen';
+    font-weight: 500;
+    font-size: 12px;
+    font-style: normal;
+}
+
+.title-vuelos{
+    color: #494949;
+    font-size: 15px;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#num-fact{
+    color: #494949;
+    text-align: center;
+    font-family: 'Oxygen';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+#puntito-azul{
+    color: #1942A1;
+    font-size: 25px;
+}
+
+#puntito-cielo{
+    color: #8AC8F1;
+    font-size: 25px;
+}
+
+#puntito-gris{
+    color: #A5ACBB;
+    font-size: 25px;
+}
+
+.box-lista{
+    border-top: 0.756px solid #A5ACBB;
+    border-bottom: 0.756px solid #A5ACBB;
+    width: 100px;
+}
+
+.dato1, .dato2, .dato3{
+    font-family: 'Inter';
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.title-efect{
+    color: #494949;
+    font-family: 'Oxygen';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+#grafica-barras{
+    display: flex;
+    margin-left: 15px;
+    height: 185px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.table{
+    --bs-table-hover-bg:#B9E3FF!important;
+}
+
+.cero{
+    color: #E4492D;
+}
+
+#down-white{
+    color: white;
+}
+
+.table{
+    display: block;
+    overflow-x: auto;
+}
+
+.static{
+    position: absolute;
+    width: 150px;
+}
+
+.first-col{
+    padding-left: 170px !important;
+}
+
+.table > :not(caption) > * > * {
+    border-bottom-width: 0px !important;
+    background-color: white;
+  }
+
+.dropdown-menu{
+    background: linear-gradient(78deg, #092647 0%, #092443 37.75%, #103863 99.40%);
+    --bs-dropdown-border-color: none !important;
+    --bs-dropdown-min-width: 8rem !important;
+    --bs-dropdown-link-hover-bg: #8AC8F1 !important;
+}
+
+.accordion{
+    --bs-accordion-border-color: none !important;
+--bs-accordion-inner-border-radius: 25px !important;
+--bs-accordion-btn-icon: none !important;
+--bs-accordion-btn-active-icon: none !important;
+}
+
+.barra-azul-gradiente-cuerpo {
+    height: auto;
+    background: linear-gradient(78deg, #092647 0%, #092443 37.75%, #103863 99.40%);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  .accordion-button{
+    height: 50px;
+  }
+
+  #dona{
+    margin-left: 25px;
+  }
+
+  a:hover {
+    --bs-link-color-rgb: #8AC8F1 !important;
+  }
+
+  #semana, #anio{
+    color: #000;
+    font-family: 'Oxygen';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.3;
+    margin-top: -23px;
+  }
+
+  .box-1-movil{
+    height: 100px;
+    transition: all 400ms ease-in-out;
+    background: #F6F6F6;
+    width: 150px;
+  }
+
+  .box-1-movil:hover{
+    border: 1px solid #103863;
+    background: #F6F6F6;
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+  }
+
+  .box-1-movil:hover .ico-geo,
+  .box-1-movil:hover .ico-home,
+  .box-1-movil:hover .ico-avion,
+  .box-1-movil:hover .ico-peso,
+  .box-1-movil:hover .ico-sol,
+  .box-1-movil:hover .ico-reloj,
+  .box-1-movil:hover .ico-ghost,
+  .box-1-movil:hover .ico-ticket{
+    color: #103863;
+    font-size: 22px;
+    transition: all 400ms ease-in-out;
+    transform: translateY(-3%);
+}
+
+.box-1-movil:hover .span{
+    color: #434343;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+#carrusel{
+    width: 300px;
+}
+
+.owl-dots{
+    display: none !important;
+}
+
+/*MediaQuerys*/
+@media(max-width: 540px){
+    #menu{
+        width: 145px;
+    }
+}
+
+@media(max-width: 375px){
+
+    .logo{
+        width: 120px;
+    }
+
+    #cfdi{
+        font-size: 20px;
+    }
+
+    .carta{
+        text-align: center !important;
+    }
+
+    #menu1{
+        width: 340px;
+    }
+
+    .accordion{
+        --bs-accordion-border-color: none !important;
+    }
+    
+      #acordeon-box{
+        width: auto;
+        text-align: center;
+        border-radius: 25px;
+      }
+    
+    .acordeon{
+        border-radius: 25px;
+        color: white;
+    }
+
+    .barra-azul-gradiente-cuerpo {
+        height: auto;
+        background: linear-gradient(78deg, #092647 0%, #092443 37.75%, #103863 99.40%);
+      }
+  }
+
+  @media(max-width: 365px){
+    #menu1{
+        width: 320px;
+    }
+  }
+
+  @media(max-width: 345px){
+    #menu1{
+        width: 316px;
+    }
+  }
+
+  @media(max-width: 330px){
+    #menu1{
+        width: 295px;
+    }
+
+    #menu{
+        width: 136px;
+    }
+  }
+
+  @media(max-width: 320px){
+    #fila{
+        background: #FFF;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    #menu1{
+        
+        width: 275px;
+    }
+
+    #menu{
+        width: 130px;
+    }
+
+    #abajo {
+        color: #368DC6;
+        margin-left: 90px;
+  }
+
+  #cfdi{
+    font-size: 15px;
+}
+
+.logo-gcp{
+    width: 50px;
+}
+
+#logo{
+    width: 105px;
+    height: 55px;
+}
+
+  .accordion{
+    --bs-accordion-border-color: none !important;
+}
+
+  #acordeon-box{
+    width: auto;
+    border-radius: 25px;
+  }
+
+  .acordeon{
+    border-radius: 25px;
+    color: white;
+}
+
+  .barra-azul-gradiente-cuerpo {
+    height: auto;
+    background: linear-gradient(78deg, #092647 0%, #092443 37.75%, #103863 99.40%);
+  }
+
+  a:hover {
+    --bs-link-color-rgb: #8AC8F1 !important;
+  }
+
+  .ico-geo, .ico-home, .ico-avion,
+.ico-peso, .ico-sol, .ico-reloj,
+.ico-ghost, .ico-ticket{
+    color: #7C7C7C;
+    font-size: 20px;
+    text-align: start;
+    margin-top: -20px;
+    margin-left: 12px;
+}
+
+.estaciones, .mex-dom, 
+.mex-expo, .peso, 
+.hrs, .min, .fantasma, .facturas{
+    color: #7C7C7C;
+    font-family: 'Oxygen';
+    font-weight: 600;
+    font-size: 12px;
+    text-align: start;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+}
